@@ -1,15 +1,13 @@
 import React from "react";
-import Banner from '@/components/Banner';
+import HomeRoot from "@/app/home/page";
 import Container from "@/components/Container";
-import Earn from "@/components/Earn";
 
 export default function Home() {
   return (
     <Container>
       <main>
         <div className="flex flex-col">
-          <Banner />
-          <Earn />
+          <HomeRoot />
         </div>
       </main>
     </Container>
