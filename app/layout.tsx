@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "Web3",
     "Crypto Mining",
     "Cryptography",
-    "Crypto Security"
+    "Crypto Security",
   ],
   openGraph: {
     title: "coinary - crypto - crypto | Defi | NFTs | blockchain",
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
