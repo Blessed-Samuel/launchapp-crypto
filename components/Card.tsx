@@ -9,7 +9,14 @@ interface CardProps {
     textColor?: string;
 }
 
-const Card: React.FC<CardProps> = ({ title, subtext, content, icon, textColor = "text-white" }) => {
+const Card: React.FC<CardProps> = ({
+    title,
+    subtext,
+    content,
+    icon,
+    textColor = "text-white"
+}) => {
+
     return (
         <div className="bg-white bg-opacity-15 backdrop-blur-3xl relative p-6 rounded-lg border-2 border-opacity-30 border-gray-500 text-start">
             <div>
@@ -18,10 +25,10 @@ const Card: React.FC<CardProps> = ({ title, subtext, content, icon, textColor = 
                 <h5 className="text-3xl text-white font-black">{content}</h5>
             </div>
 
-            <div className="absolute -top-6 -right-6 backdrop-blur-3xl rounded-full ">
+            <div className="absolute -top-6 -right-6 backdrop-blur-3xl">
                 <Image
                     src={icon}
-                    alt="fire icon"
+                    alt={icon}
                     width={60}
                     height={60}
                 />

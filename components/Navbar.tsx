@@ -13,8 +13,8 @@ const Navbar: React.FC = () => {
     }
 
     return (
-        <div className="h-[120px] mt-10 rounded-lg z-50 px-16">
-            <div className="p-4 rounded-full bg-slate-800 bg-opacity-20 backdrop-blur-sm flex flex-row items-center justify-between m-auto px-[30px]">
+        <div className="h-[120px] mt-10 rounded-lg z-50 px-4 md:px-16"> {/* Responsive padding */}
+            <div className="p-4 px-6 rounded-full bg-slate-800 bg-opacity-20 backdrop-blur-sm flex flex-row items-center justify-between max-w-[95%] md:max-w-full m-auto">
                 <Link href="/" title="Launchapp Logo" className="h-auto w-auto flex flex-row items-center">
                     <Image
                         src="/Launchapp-logo.svg"
@@ -41,20 +41,21 @@ const Navbar: React.FC = () => {
                 </div>
 
                 {/* Menu Icon for Mobile */}
-                <div className="md:hidden flex items-center">
+                <div className="md:hidden z-50 flex items-center">
                     <button onClick={handleToggle} className="text-white">
-                        {isShow ? <FiX size={24} /> : <FiMenu size={24} />} {/* Toggle between menu and close icons */}
+                        {isShow ? <FiX size={24} /> : <FiMenu size={24} />}
                     </button>
                 </div>
             </div>
 
             {/* Sidebar for Mobile */}
             {isShow && (
-                <div className="fixed inset-0 bg-black bg-opacity-75 z-40 flex flex-col items-center justify-center md:hidden">
+                <div className="z-50 fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center md:hidden">
                     <div className="space-y-6 text-white text-center text-lg">
                         <Link href="/" onClick={handleToggle} className="block">Home</Link>
                         <Link href="/features" onClick={handleToggle} className="block">Features</Link>
                         <Link href="/career" onClick={handleToggle} className="block">Career</Link>
+
                         <button
                             onClick={() => { window.open("mailto:samuelalisigwe22@gmail.com", "_blank"); handleToggle(); }}
                             className="mt-4 bg-gradient-to-br from-[#5200FF] to-[#FFAF36] text-white rounded-3xl cursor-pointer font-semibold py-3 px-5"

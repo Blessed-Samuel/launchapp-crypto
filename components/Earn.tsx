@@ -50,14 +50,14 @@ const Earn: React.FC<{}> = () => {
                         subtext="Kcal"
                         content="Calories burned"
                         icon="/scale.svg"
-                        textColor="text-transparent bg-clip-text bg-gradient-to- from-[#236D49] to-[#30AE35]"
+                        textColor="text-transparent bg-clip-text bg-gradient-to-r from-[#236D49] to-[#30AE35]"
                     />
                     <Card
                         title="+112,256.60"
                         subtext="Kcal"
                         content="Calories burned"
                         icon="/group.svg"
-                        textColor="text-transparent bg-clip-text bg-gradient-to- from-[#705612] to-[#EDB628]"
+                        textColor="text-transparent bg-clip-text bg-gradient-to-r from-[#705612] to-[#EDB628]"
                     />
                 </div>
             </div>
