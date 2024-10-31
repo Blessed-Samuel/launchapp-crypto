@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
     }
 
     return (
-        <div className="h-[120px] mt-10 rounded-lg z-50 px-4 md:px-16"> {/* Responsive padding */}
+        <nav className="h-[120px] mt-10 rounded-lg z-50 px-4 md:px-16"> {/* Responsive padding */}
             <div className="p-4 px-6 rounded-full bg-slate-800 bg-opacity-20 backdrop-blur-sm flex flex-row items-center justify-between max-w-[95%] md:max-w-full m-auto">
                 <Link href="/" title="Launchapp Logo" className="h-auto w-auto flex flex-row items-center">
                     <Image
@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
                     </div>
                 </div>
             )}
-        </div>
+        </nav>
     );
 };
 

@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "./Button";
 import Card from "./Card";
-import Image from "next/image";
 
 const Earn: React.FC<{}> = () => {
     return (
@@ -9,7 +8,7 @@ const Earn: React.FC<{}> = () => {
             <div className="flex flex-col items-center justify-center text-center mt-6">
                 <div className="mb-16">
                     <h1 className="text-5xl font-extrabold bg-clip-text mb-6 text-gray-300">Earn To Move</h1>
-                    <p className="font-extralight">Ready to energize your life and turn it into earnings? With Move to Earn, your steps hold real value. Simply walk, run, or exercise to earn. Each step matters.</p>
+                    <p className="font-thin">Ready to energize your life and turn it into earnings? With Move to Earn, your steps hold real value. Simply walk, run, or exercise to earn. Each step matters.</p>
                 </div>
 
                 <div className="flex space-x-12 mb-32">

@@ -25,7 +25,7 @@ const Card: React.FC<CardProps> = ({
                 <h5 className="text-3xl text-white font-black">{content}</h5>
             </div>
 
-            <div className="absolute -top-6 -right-6 backdrop-blur-3xl">
+            <div className="absolute rounded-full -top-6 -right-6 backdrop-blur-3xl">
                 <Image
                     src={icon}
                     alt={icon}
