@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   metadataBase: new URL("https://coinary.crypto.com/"),
   title: 'Home | LaunchApp-Crypto',
-  description: 'With Move to Earn, your steps hold real value. Simply walk, run, or exercise to earn.',
+  description: 'Turn every step into earnings with LaunchApp-Crypto. Join the Move-to-Earn revolution—walk, run, or exercise and watch your activity generate real rewards in crypto!',
   keywords: [
     "Cryptocurrency",
     "Blockchain",
