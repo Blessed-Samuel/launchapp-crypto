@@ -34,7 +34,7 @@ const Button: React.FC<ButtonProps> = ({
     };
 
     return (
-        <button
+        <button type="button"
             onClick={handleClick}
             className={`transition-transform duration-300 ${isBouncing ? "scale-95" : ""} ${bgColor} ${borderColor} ${borderThickness} ${buttonOpacity} ${textColor} backdrop-blur-lg flex items-center space-x-4 font-normal py-4 px-6 rounded-lg border`}
         >
