@@ -1,7 +1,9 @@
 import React from "react";
 import Banner from "@/components/Banner";
 import Earn from "@/components/Earn";
+import Steps from "@/components/Steps";
 import Container from "@/components/Container";
+import Rarity from "@/components/Rarity";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -34,6 +36,8 @@ export default function Home() {
         <Container>
           <Banner />
           <Earn />
+          <Steps />
+          <Rarity />
         </Container>
       </section>
     </>
