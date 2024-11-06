@@ -1,7 +1,7 @@
 export const teamMembers = [
     {
         id: 1,
-        name: "Yaweh's Delight",
+        name: "Blessed Samuel",
         role: "Owner & Developer",
         imageSrc: "/MyPics2.jpg",
         altText: "Blessed Samuel Image",
@@ -17,7 +17,7 @@ export const teamMembers = [
 
     {
         id: 3,
-        name: "Blessed Samuel",
+        name: "Ebube Samuel",
         role: "Creative Designer",
         imageSrc: "/MyPics2.jpg",
         altText: "Blessed Samuel Image",
