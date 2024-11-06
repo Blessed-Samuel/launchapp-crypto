@@ -12,7 +12,7 @@ const FAQ: React.FC = () => {
     };
 
     return (
-        <section id="FAQ" className="mx-auto flex flex-col items-center px-6 mb-24 mt-48 md:mt-60">
+        <section id="FAQ" className="mx-auto flex flex-col items-center px-6 md:px-0 mb-24 mt-48 md:mt-60">
             <h1 className="text-3xl text-center font-extrabold mb-10 text-gray-300">Frequently Asked Questions</h1>
 
             <div className="w-full max-w-2xl space-y-6">
