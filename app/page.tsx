@@ -4,6 +4,9 @@ import Earn from "@/components/Earn";
 import Steps from "@/components/Steps";
 import Container from "@/components/Container";
 import Rarity from "@/components/Rarity";
+import Level from "@/components/Level";
+import Team from "@/components/Team";
+import FAQ from "@/components/FAQ";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -38,6 +41,9 @@ export default function Home() {
           <Earn />
           <Steps />
           <Rarity />
+          <Level />
+          <Team />
+          <FAQ />
         </Container>
       </section>
     </>

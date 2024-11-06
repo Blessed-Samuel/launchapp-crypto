@@ -31,7 +31,7 @@ const Banner: React.FC<{}> = () => {
                     />
                 </div>
 
-                <Image src="./nftimages.svg" alt="nftImage" width={100} height={100} className="w-full md:px-0 px-6" />
+                <Image src="./nftimages.svg" alt="nftImage" width={100} height={100} className="w-auto h-auto md:px-0 px-6" />
             </div>
         </section>
     )

@@ -38,7 +38,7 @@ const Button: React.FC<ButtonProps> = ({
             onClick={handleClick}
             className={`transition-transform duration-300 ${isBouncing ? "scale-95" : ""} ${bgColor} ${borderColor} ${borderThickness} ${buttonOpacity} ${textColor} backdrop-blur-lg flex items-center space-x-4 font-normal py-4 px-6 rounded-lg border`}
         >
-            <Image src={icon} alt={label} width={20} height={20} />
+            <Image src={icon} alt={label} width={20} height={20} className="w-auto h-auto"/>
             <span>{label}</span>
         </button>
     );

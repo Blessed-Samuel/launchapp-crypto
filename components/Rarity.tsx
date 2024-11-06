@@ -14,7 +14,7 @@ const Rarity: React.FC<{}> = () => {
     };
 
     return (
-        <section id="rarity" className="mb-16 mt-60">
+        <section id="rarity" className="mb-16 mt-48">
             <div className="space-y-48 md:px-0 px-6">
                 <div className="flex flex-col md:flex-row gap-14 items-center">
                     <div className="mb-14">
@@ -22,7 +22,7 @@ const Rarity: React.FC<{}> = () => {
                         <p className="font-extralight text-xl max-w-2xl mx-auto text-gray-300">Start earning money by walking! Download our app now and convert your steps into earnings with our blockchain and cryptocurrency-based experience.</p>
                     </div>
 
-                    <Image src="./Card-1.svg" alt="card-1-image" width={500} height={500} />
+                    <Image src="./Card-1.svg" alt="card-1-image" width={500} height={500} className="w-auto h-auto"/>
                 </div>
 
                 <div className="flex flex-col md:flex-row-reverse gap-14 items-center">
@@ -33,7 +33,7 @@ const Rarity: React.FC<{}> = () => {
                         <button className={`mt-8 text-[#5283FF] text-sm bg-[#363636] bg-opacity-60 backdrop-blur-lg border-2 border-gray-500 px-6 py-4 rounded-lg hover:bg-[#2a2a2a] transition-transform duration-300 ${scale ? "scale-95" : ""}`} onClick={handleScale}>Launch App</button>
                     </div>
 
-                    <Image src="./Card-2.svg" alt="card-2-image" width={500} height={500} />
+                    <Image src="./Card-2.svg" alt="card-2-image" width={500} height={500} className="w-auto h-auto"/>
                 </div>
             </div>
         </section>

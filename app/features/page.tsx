@@ -1,33 +1,34 @@
 "use client";
 
+import React from "react";
 import Container from "@/components/Container";
-import { useState } from "react";
+import Image from "next/image";
 
-export default function Features() {
-    const [index, setIndex] = useState(0);
-    const [isBouncing, setIsBouncing] = useState(false);
-
-    const [showMore, setShowMore] = useState(false);
-
-    function handleClick() {
-        setIndex(index + 1);
-        setIsBouncing(true);
-
-        setTimeout(() => setIsBouncing(false), 200);
-    }
-
-    function handleShowMore() {
-        setShowMore(!showMore);
-    }
+const Feature: React.FC<{}> = () => {
 
     return (
-        <Container>
-            <div>
-                <button onClick={handleClick} className={`mr-2 text-white text-lg transition-transform duration-300 rounded-md ${isBouncing ? "scale-95" : ""} bg-blue-500 p-4`}>Click Me!</button>
-                <span>Index + {index}</span>
-            </div>
-            <button onClick={handleShowMore} className="text-white text-lg">{showMore ? 'hide' : ''}</button>
-            <h1> Features at Coinary <span className="text-red-200">Crypto</span></h1>
-        </Container>
+        <section id="level" className="mb-16">
+            <Container>
+                <div className="md:px-0 px-6">
+                    <div className="mb-12 flex flex-col md:flex-col gap-14 items-center">
+                        <div className="-mb-12 text-center">
+                            <h1 className="text-3xl font-extrabold mb-4 text-gray-300">Feature Level</h1>
+                            <p className="font-extralight text-md max-w-2xl mx-auto text-gray-300">More information about the rarity levels of NFTs</p>
+                        </div>
+
+                        <Image src="./Circles.svg" alt="card-1-image" width={300} height={300} className="w-auto h-auto" />
+                    </div>
+
+                    <div className="space-y-32">
+                        <Image src="./RarityTable.svg" alt="card-2-image" width={100} height={100} className="w-auto h-auto" />
+
+                        <Image src="./nftimages.svg" alt="nft-image" width={100} height={100} className="w-auto h-auto" />
+
+                    </div>
+                </div>
+            </Container>
+        </section>
     );
-}
+};
+
+export default Feature;

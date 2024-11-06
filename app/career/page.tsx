@@ -1,25 +1,34 @@
 "use client";
 
+import React from "react";
 import Container from "@/components/Container";
-import { useState } from "react";
+import Image from "next/image";
 
-export default function Career() {
-    const [count, setCount] = useState(0);
-    const [isBouncing, setIsBouncing] = useState(false);
-
-    function handleClick() {
-        setCount(count + 1);
-        setIsBouncing(true);
-
-        setTimeout(() => setIsBouncing(false), 200);
-    }
-
+const Career: React.FC<{}> = () => {
 
     return (
-        <Container>
-            <h1 className="mb-2">Career Opportunities at Coinary Crypto</h1>
-            <button onClick={handleClick} className={`p-4 bg-green-700 rounded-lg mr-2 transition-transform duration-300 ${isBouncing ? "scale-95" : ""} `}>Click me to Increment!</button>
-            <span>the count is incremented by: {count}</span>
-        </Container>
+        <section id="level" className="mb-16">
+            <Container>
+                <div className="md:px-0 px-6">
+                    <div className="mb-12 flex flex-col md:flex-col gap-14 items-center">
+                        <div className="-mb-12 text-center">
+                            <h1 className="text-3xl font-extrabold mb-4 text-gray-300">Career Level</h1>
+                            <p className="font-extralight text-md max-w-2xl mx-auto text-gray-300">More information about the rarity levels of NFTs</p>
+                        </div>
+
+                        <Image src="./Circles.svg" alt="card-1-image" width={100} height={100} className="w-auto h-auto"/>
+                    </div>
+
+                    <div className="space-y-32">
+                        <Image src="./RarityTable.svg" alt="card-2-image" width={100} height={100} className="w-auto h-auto"/>
+
+                        <Image src="./nftimages.svg" alt="nft-image" width={100} height={100} className="w-auto h-auto"/>
+
+                    </div>
+                </div>
+            </Container>
+        </section>
     );
-}
+};
+
+export default Career;

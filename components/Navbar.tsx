@@ -22,6 +22,7 @@ const Navbar: React.FC = () => {
                         width={20}
                         height={20}
                         sizes="100vw"
+                        className="w-auto -h-auto"
                     />
                 </Link>
 
